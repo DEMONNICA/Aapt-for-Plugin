@@ -1,0 +1,7 @@
+id=AAPT
+name=Aapt Multiarch
+version=1.0.0
+versionCode=100
+author=@illumi
+description=Android Asset Packaging Tool.
+axeronPlugin=14000
