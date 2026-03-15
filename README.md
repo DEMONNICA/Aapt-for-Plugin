@@ -17,15 +17,19 @@
 
 > [!WARNING]
 > Disclaimers 🛡️:
-> - This module is provided as is, without warranty of any kind. Any risks of use are entirely your responsibility. It is recommended to back up important data and configuration before installation. This module was developed in good faith to provide benefits, but the author is not responsible for any damage or problems that may occur as a result of its use.
-> - For `(Non root)` users, it is very likely that no changes will occur due to very strict access restrictions.
+> - Use at your own risk. No guarantees are made regarding stability, compatibility, or safety. Always back up your data before installing anything.
+> - These works are tested on specific devices only. Behavior on other devices may vary significantly.
+> - The author reserves the right to discontinue, modify, or remove any module or plugin at any time without prior notice.
 
 > [!CAUTION]
 > Warning ☢️:
-> 1. Use of this module is the sole responsibility of the user. The developer is not responsible for any damage or malfunctions that may occur as a result of the installation or use of this module.
-> 2. This module can modify certain parts of the system. Under certain conditions or configurations, misuse may cause problems such as bootloops or system instability.
-> 3. Before proceeding with the installation, make sure you have access to a recovery mode such as TWRP or ADB as a safety measure in case something goes wrong.
-> 4. This module modifies various sensitive system parameters. Improper or incompatible configurations may lead to system instability, overheating, performance degradation, or even bootloops. Use responsibly and ensure you understand the risks involved in applying each modification.
+> 1. The developer takes no responsibility for any damage, data loss, or device malfunction caused by the use of these works.
+> 2. System modifications can be unpredictable. What works on one device may break another.
+> 3. Always have a recovery solution ready — TWRP, ADB, or fastboot — before proceeding.
+> 4. If you do not fully understand what a modification does, do not apply it.
+> 5. Redistribution, modification, or repackaging of these works without explicit permission from the author is strictly prohibited.
+> 6. Rooted devices with custom ROM may behave differently. Proceed with extra caution.
+> 7. Any modification applied to the system is your decision. Think before you act.
 
 > Download 📦:        
 > - [Download now Aapt Multiarch.](https://shrinkme.click/IbCeJDoQ)
