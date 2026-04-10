@@ -1,4 +1,4 @@
-> ![Image](https://github.com/user-attachments/assets/31dff235-c8f8-4d85-b671-a9d44a127809)
+> ![Image](https://github.com/user-attachments/assets/ec67e51e-6974-4da5-8646-555bb6c79bcc)
 
 > [!NOTE]
 > ```
@@ -12,7 +12,7 @@
 > 3. Lightweight and simple integration for Android environments.
 
 > [!TIP]
-> 1. Supports `AxManager` `Non-Root or Root`.
+> 1. Supports `AxManager` and `FolkPure` — `Non-Root or Root`.
 > 2. Minimum Android `10 sdk 29`.
 
 > [!WARNING]
