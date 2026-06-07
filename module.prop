@@ -1,7 +1,8 @@
 id=AAPT
 name=Aapt Multiarch
-version=2.2.0
-versionCode=220
+version=3.5.0
+versionCode=350
 author=@illumi
-description=Android Asset Packaging Tool.
+description=AAPT and AAPT2 binaries with multi-architecture support for arm64-v8a, armeabi-v7a, x86, and x86_64 platforms.
+banner=https://raw.githubusercontent.com/DEMONNICA/Aapt-for-Plugin/refs/heads/main/assets/AAPT.jpg
 axeronPlugin=666
