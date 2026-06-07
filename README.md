@@ -2,7 +2,7 @@
 
 > [!NOTE]
 > ```
-> Ready-to-use AAPT (Android Asset Packaging Tool) binaries with multi-architecture support.
+> AAPT and AAPT2 binaries with multi-architecture support for arm64-v8a, armeabi-v7a, x86, and x86_64 platforms.
 > ```
 
 > [!IMPORTANT]
@@ -10,10 +10,13 @@
 > 1. Prebuilt AAPT binaries ready to use.
 > 2. Multi-architecture support (arm64-v8a, armeabi-v7a, x86, x86_64).
 > 3. Lightweight and simple integration for Android environments.
+> 4. Hybrid support — works as both Axeron plugin and Magisk/KernelSU/APatch module.
 
 > [!TIP]
-> 1. Supports `AxManager` and `FolkPure` — `Non-Root or Root`.
-> 2. Minimum Android `10 sdk 29`.
+> 1. Supports `AxManager`, `FolkPure`, and `Axora` — `Non-Root or Root`.
+> 2. Supports `Magisk` `KernelSU` `KernelSU Next` `APatch` `SukiSU` and their variants.
+> 3. Minimum Android `10 SDK 29`.
+> 4. **Module users only** — requires a **Hybrid Mount** module to enable system binary overlay support — [Download Meta](https://github.com/Hybrid-Mount/meta-hybrid_mount/releases) or any compatible alternative.
 
 > [!WARNING]
 > Disclaimers 🛡️:
@@ -30,8 +33,3 @@
 > 5. Redistribution, modification, or repackaging of these works without explicit permission from the author is strictly prohibited.
 > 6. Rooted devices with custom ROM may behave differently. Proceed with extra caution.
 > 7. Any modification applied to the system is your decision. Think before you act.
-
-> Download 📦:        
-> - [Download now Aapt Multiarch.](https://shrinkme.click/IbCeJDoQ)
-> - [For Magisk Modules or other Plugins, please visit here.](https://t.me/Demoniica)
-----
