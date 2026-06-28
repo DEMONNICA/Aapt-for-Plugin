@@ -2,6 +2,25 @@
 > - All significant changes to this project will be documented here.
 ---
 
+> [4.0.0]
+>
+> - Added `${USER}` to Axeron detection output in `detect_root_all`.
+> - Added back `axeronPlugin` update in `customize.sh` section #13 for plugin mode.
+> - Changed detection order in `detect_root_all` to alphabetical — Axeron → APatch → KernelSU → Magisk.
+> - Changed `for entry` lists in `detect_root_all` sorted alphabetically by label.
+> - Changed root method reading order in `service.sh` section #2 to APatch → KSU → Magisk.
+> - Changed APatch `.method` from 4 lines to 5 lines — added `APATCH_VER` (KernelPatch codename) as line 2.
+> - Changed `curl` for `APATCH_KERNEL_VER_CODE` to use `--insecure` flag.
+> - Changed `APATCH_KERNEL_VER_CODE` fallback from `?` to last known value from `.method` line 5.
+> - Changed `service.sh` APatch block to always read from `.method` directly, removed `if [ -z ]` guard.
+> - Changed `VER_KERNEL` to `APATCH_KERNEL_VER_CODE` in `service.sh` for consistency.
+> - Changed `uninstall.sh` fstrim moved inside each mode block — module (2c) and plugin (2g).
+> - Changed `.method` deletion order in `uninstall.sh` to APatch → KSU → Magisk.
+> - Fixed `io.github.huskydg.magisk` label incorrectly set to `Kitsune Mask`, corrected to `Magisk Kitsune`.
+> - Fixed `VER_KERNEL` in `service.sh` APatch block placed outside `if` block.
+> - Removed `USER_DETECT` variable from `service.sh` — unused.
+---
+
 > [3.5.0]
 >
 > - Added hybrid plugin/module mode support across `customize.sh`, `service.sh`, and `uninstall.sh`.
