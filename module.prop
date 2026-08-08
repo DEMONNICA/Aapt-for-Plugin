@@ -1,7 +1,8 @@
-id=GPS
-name=GPS Optimization
-version=4.0.0
-versionCode=400
+id=AAPT
+name=Aapt Multiarch
+version=4.2.0
+versionCode=420
 author=@illumi
-description=Improves GPS performance and stability on Android devices.
-banner=https://raw.githubusercontent.com/DEMONNICA/GPS-Optimization/refs/heads/main/GPS.jpg
+description=AAPT and AAPT2 binaries with multi-architecture support for arm64-v8a, armeabi-v7a, x86, and x86_64 platforms.
+banner=https://raw.githubusercontent.com/DEMONNICA/Aapt-for-Plugin/refs/heads/main/assets/AAPT.jpg
+axeronPlugin=666
