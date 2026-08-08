@@ -2,6 +2,20 @@
 > - All significant changes to this project will be documented here.
 ---
 
+> [4.2.0]
+>
+> - Added extraction of `update-binary` in `verify.sh` section #5.
+> - Changed `module_remove_check` in `customize.sh` — plugin removal moved to separate section #2.
+> - Changed `PREFIX` separator in `service.sh` from `•` to `|` for both plugin and module mode.
+> - Changed sed separator in `service.sh` section #6 from `|` to `@` to avoid conflict with description content.
+> - Changed `set_donate_link` section 10b in `customize.sh` — removed `else` fallback since `banner=` is always present in `module.prop`.
+> - Changed `axeronPlugin` update logic in `customize.sh` section #14 — checks if field exists before updating, appends if missing.
+> - Changed hash priority in `verify.sh` section #4b — now checks `md5 sha512 sha384 sha256 sha224 sha1`.
+> - Removed `.method` file deletion from `uninstall.sh` module mode.
+> - Removed `axeronPlugin` from module mode `module.prop` in `service.sh` and `customize.sh`.
+> - Removed `detect_plugin_combination` from `customize.sh` — KANG and SEKOIIRE detection removed.
+---
+
 > [4.0.0]
 >
 > - Added `${USER}` to Axeron detection output in `detect_root_all`.
