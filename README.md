@@ -7,13 +7,21 @@
 
 > [!IMPORTANT]
 > Features ✨:
-> 1. Multi-architecture support (arm64-v8a, armeabi-v7a, x86, x86_64).
+> 1. Includes AAPT `v0.2-android-16.0.0_r4`, built from the latest AOSP release.
+> 2. Includes AAPT2 `2.20-android-16.0.0_r4`, built from the latest AOSP release.
+> 3. Includes `sudo` — Module and Axeron plugin (root) only.
+> 4. Supports `ARM64`, `ARMv7a`, `x86`, and `x86_64` architectures.
 
 > [!TIP]
-> 1. Supports `AxManager` and their forks — `Non-Root or Root`.
+> 1. Supports `AxManager` and their forks.
 > 2. Supports `APatch` `KernelSU` `Magisk` and their forks.
 > 3. Minimum Android `10 SDK 29`.
-> 4. **Module users only** — requires a **Hybrid Mount** module to enable system binary overlay support — [Download Meta](https://github.com/Hybrid-Mount/meta-hybrid_mount/releases) or any compatible alternative.
+> 4. <details>
+>    <summary>Use a metamodule for compatibility with this module</summary>
+>
+>    [Hybrid Mount](https://github.com/Hybrid-Mount/meta-hybrid_mount) | [NoMount](https://github.com/maxsteeel/nomount) | [ZeroMount](https://github.com/Enginex0/zeromount) | [Mountify](https://github.com/backslashxx/mountify)
+>
+>    </details>
 
 > [!WARNING]
 > 1. If you do not fully understand what a modification does, do not apply it.
