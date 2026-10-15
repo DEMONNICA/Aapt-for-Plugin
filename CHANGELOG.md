@@ -2,15 +2,31 @@
 > - All significant changes to this project will be documented here.
 ---
 
+> [4.5.0]
+>
+> - Added author verification to `verify_module_id` in `verify.sh`.
+> - Added `me.yuki.aster:Aster` and `me.yuki.folksu:FolkSU` to APatch detection in `detect_root_all`.
+> - Added `sudo` binary for all supported architectures, installed in module mode and Axeron plugin root mode only.
+> - Added unsupported architecture check in `customize.sh` — installation now aborts instead of continuing without binaries.
+> - Changed KSU spoofed fallback case in `customize.sh` — simplified to `KernelSU-Next Spoofed`, `Wild KSU Spoofed`, and generic `KernelSU Spoofed`. Removed VortexSU and ReSukiSU specific cases.
+> - Changed `device_info` RAM label logic in `customize.sh` — replaced long `if/elif` chain with reusable `ram_label()` function.
+> - Changed `device_info` SDK validation in `customize.sh` — added check for empty or non-numeric SDK value before minimum version check.
+> - Changed ReSukiSU detection in `detect_root_all` to `BakaSU` — name is read from the APK (`ReSukiSU`/`BakaSU`), and `BakaSU` is added to the spoofed `aapt` check.
+> - Changed `aapt` to `v0.2-android-16.0.0_r4` and `aapt2` to `2.20-android-16.0.0_r4`.
+> - Fixed installation failure on Magisk Kitsune — `update-binary` now follows the official Magisk module template (sets `OUTFD` and `ZIPFILE` from installer arguments, handles empty `MAGISK_VER_CODE`).
+> - Removed `com.vortexsu.vortexsu:VortexSU` from KernelSU detection and `moe.bemly.kokoro:Kokoro Mask` from Magisk detection in `detect_root_all`.
+> - Removed fallback `AAPT_VER` and hardcoded `35.0.2` version in `service.sh`.
+---
+
 > [4.2.0]
 >
-> - Added extraction of `update-binary` in `verify.sh` section #5.
-> - Changed `module_remove_check` in `customize.sh` — plugin removal moved to separate section #2.
+> - Added extraction of `update-binary` in `verify.sh`.
+> - Changed `module_remove_check` in `customize.sh` — plugin removal moved to a separate section.
 > - Changed `PREFIX` separator in `service.sh` from `•` to `|` for both plugin and module mode.
-> - Changed sed separator in `service.sh` section #6 from `|` to `@` to avoid conflict with description content.
-> - Changed `set_donate_link` section 10b in `customize.sh` — removed `else` fallback since `banner=` is always present in `module.prop`.
-> - Changed `axeronPlugin` update logic in `customize.sh` section #14 — checks if field exists before updating, appends if missing.
-> - Changed hash priority in `verify.sh` section #4b — now checks `md5 sha512 sha384 sha256 sha224 sha1`.
+> - Changed sed separator in `service.sh` from `|` to `@` to avoid conflict with description content.
+> - Changed `set_donate_link` in `customize.sh` — removed `else` fallback since `banner=` is always present in `module.prop`.
+> - Changed `axeronPlugin` update logic in `customize.sh` — checks if field exists before updating, appends if missing.
+> - Changed hash priority in `verify.sh` — now checks `md5 sha512 sha384 sha256 sha224 sha1`.
 > - Removed `.method` file deletion from `uninstall.sh` module mode.
 > - Removed `axeronPlugin` from module mode `module.prop` in `service.sh` and `customize.sh`.
 > - Removed `detect_plugin_combination` from `customize.sh` — KANG and SEKOIIRE detection removed.
@@ -19,16 +35,16 @@
 > [4.0.0]
 >
 > - Added `${USER}` to Axeron detection output in `detect_root_all`.
-> - Added back `axeronPlugin` update in `customize.sh` section #13 for plugin mode.
+> - Added back `axeronPlugin` update in `customize.sh` for plugin mode.
 > - Changed detection order in `detect_root_all` to alphabetical — Axeron → APatch → KernelSU → Magisk.
 > - Changed `for entry` lists in `detect_root_all` sorted alphabetically by label.
-> - Changed root method reading order in `service.sh` section #2 to APatch → KSU → Magisk.
+> - Changed root method reading order in `service.sh` to APatch → KSU → Magisk.
 > - Changed APatch `.method` from 4 lines to 5 lines — added `APATCH_VER` (KernelPatch codename) as line 2.
 > - Changed `curl` for `APATCH_KERNEL_VER_CODE` to use `--insecure` flag.
 > - Changed `APATCH_KERNEL_VER_CODE` fallback from `?` to last known value from `.method` line 5.
 > - Changed `service.sh` APatch block to always read from `.method` directly, removed `if [ -z ]` guard.
 > - Changed `VER_KERNEL` to `APATCH_KERNEL_VER_CODE` in `service.sh` for consistency.
-> - Changed `uninstall.sh` fstrim moved inside each mode block — module (2c) and plugin (2g).
+> - Changed `uninstall.sh` fstrim moved inside each mode block — module and plugin.
 > - Changed `.method` deletion order in `uninstall.sh` to APatch → KSU → Magisk.
 > - Fixed `io.github.huskydg.magisk` label incorrectly set to `Kitsune Mask`, corrected to `Magisk Kitsune`.
 > - Fixed `VER_KERNEL` in `service.sh` APatch block placed outside `if` block.
